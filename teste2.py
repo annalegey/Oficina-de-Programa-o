@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import numpys as np
+import numpy as np
 
 st.title('Teste ECMI 2')
 
