@@ -2,11 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-genêro = input("Selecione o genêro de livro que você deseja:").replace(' ','-')
+genêro = st.text_input("Selecione o genêro de livro que você deseja:").replace(' ','-')
 url = 'https://leitura.com.br/livros/' + genêro
 site = requests.get('https://leitura.com.br/livros/' + genêro)
 soup = BeautifulSoup(site.content, 'html.parser')
 
+st.write('Preços de livros pelo gênero)
 import requests
 from bs4 import BeautifulSoup
 
