@@ -1,6 +1,6 @@
 import pandas as pd
 import csv
-import st as streamlit
+import streamlit as st
 
 df = pd.read_csv('brasil-win.csv', encoding='ISO-8859-1')
 
