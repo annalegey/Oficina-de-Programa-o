@@ -6,4 +6,4 @@ import numpy as np
 arquivo = open('brasil-win.csv', encoding = 'ISO-8859-1')
 for registro in csv.reader(arquivo,delimiter =','):
     st.write(registro)
-    st.bar_chart('brasil-win.csv')
+    st.bar_chart('registro')
