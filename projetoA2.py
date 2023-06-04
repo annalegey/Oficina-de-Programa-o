@@ -36,6 +36,6 @@ if st.button("Consultar"):
         df = pd.DataFrame(lista).sort_values(by='Preço do livro', ascending=True)
         st.write(df)
         df.set_index('Livro', inplace=True)
-        st.bar_chart(df['Preço do livro'])
+        st.line_chart(df['Preço do livro'])
     else:
         st.write("Nenhum livro encontrado")
