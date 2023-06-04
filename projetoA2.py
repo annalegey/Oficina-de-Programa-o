@@ -34,4 +34,4 @@ if st.button("Consultar"):
                 lista.append(dados)
         df = pd.DataFrame(lista).sort_values(by='Preço do livro', ascending=True)
         st.write(df)
-        st.bar_chart(df, x = 'Livro', y = 'Preço do livro')
+        st.bar_chart(df['Preço do livro'])
