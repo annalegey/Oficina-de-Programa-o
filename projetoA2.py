@@ -7,7 +7,6 @@ url = 'https://leitura.com.br/livros/' + genêro
 site = requests.get('https://leitura.com.br/livros/' + genêro)
 soup = BeautifulSoup(site.content, 'html.parser')
 
-st.write('Preços de livros pelo gênero)
 import requests
 from bs4 import BeautifulSoup
 
