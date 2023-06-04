@@ -38,3 +38,4 @@ if st.button("Consultar"):
         st.table(df)
     else:
         st.write("Nenhum livro encontrado")
+st.bar_chat(df, x = 'Livro', y = 'Preço do livro')
