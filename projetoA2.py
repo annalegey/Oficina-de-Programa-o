@@ -4,6 +4,16 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 st.title("Consulta de Preços de Livros")
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: lightblue;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 genero = st.text_input("Selecione o gênero de livro que você deseja:")
 genero = genero.replace(' ', '-')
