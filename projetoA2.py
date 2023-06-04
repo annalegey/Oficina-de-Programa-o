@@ -32,10 +32,6 @@ if st.button("Consultar"):
 
                 dados = {'Livro': nome_livro, 'Preço do livro': preco_new, 'Link para compra': link_livro}
                 lista.append(dados)
-
-    if lista:
         df = pd.DataFrame(lista).sort_values(by='Preço do livro', ascending=True)
         st.table(df)
-    else:
-        st.write("Nenhum livro encontrado")
-st.bar_chat(df, x = 'Livro', y = 'Preço do livro')
+        st.bar_chat(df, x = 'Livro', y = 'Preço do livro')
