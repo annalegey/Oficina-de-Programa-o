@@ -6,7 +6,6 @@ import pandas as pd
 st.title("Consulta de Preços de Livros")
 st.markdown("<span style='color: red;'>Texto em vermelho</span>", unsafe_allow_html=True)
 
-
 genero = st.text_input("Selecione o gênero de livro que você deseja:")
 genero = genero.replace(' ', '-')
 
