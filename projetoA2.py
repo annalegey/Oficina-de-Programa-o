@@ -36,8 +36,10 @@ if st.button("Consultar"):
                 preco_new = preco.find('span', {'class': 'price-new'})
                 if preco_new:
                     preco_new = preco.find('span', {'class': 'price-new'}).text
+                    preco_new = float(preço_new.replace('R$',''))
                 else:
                     preco_new = preco.text.strip()
+                    preco_new = float(preço_new.replace('R$',''))
 
                 dados = {'Livro': nome_livro, 'Preço do livro': preco_new, 'Link para compra': link_livro}
                 lista.append(dados)
@@ -46,6 +48,6 @@ if st.button("Consultar"):
         st.write(df)
         df.set_index('Livro', inplace=True)
         st.title('Faixa de preços')
-        st.line_chart(df[x= "Livro", y='Preço do livro'])
+        st.line_chart(df['Preço do livro'])
     else:
         st.write("Nenhum livro encontrado")
