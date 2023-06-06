@@ -6,9 +6,9 @@ import pandas as pd
 st.title("Consulta de Preços de Livros")
 
 genero = st.text_input("Selecione o gênero de livro que você deseja:")
+opcao1 = st.checkbox('ciencias sociais')
 genero = genero.replace(' ', '-')
 
-opcao1 = st.checkbox('ciencias sociais')
 if st.button("Consultar"):
     url = 'https://leitura.com.br/livros/' + genero
     site = requests.get(url)
