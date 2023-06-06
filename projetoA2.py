@@ -13,7 +13,7 @@ genero = st.selectbox("Selecione o gênero de livro que você deseja:",
                                "Estudo De Línguas Estrangeiras", "Família e Relacionamentos", "Ficção", "Ficção Infantil", "Ficção Juvenil", "Filosofia",
                                "Fotografia", "História","Humor","Jardinagem","Jogos e Atividades", "Língua, Comunicação e Disciplinas Relacionadas",
                                "Livros Música","Matemática", "Medicina", "Natureza", "Negócios e Economia", "Não Ficção Infantil", "Não Ficção Juvenil", "Poesia",
-                               "Psicologia", "Quadrinhos, Mangás e Graphic Novels", "Referência", "Religião", "Saúde e Boa Forma", "Teatro", "Transportes", "Viagem"])
+                               "Psicologia", "Quadrinhos e Graphic Novels", "Referência", "Religião", "Saúde e Boa Forma", "Teatro", "Transportes", "Viagem"])
                               
 genero = genero.replace(' ', '-')
 
