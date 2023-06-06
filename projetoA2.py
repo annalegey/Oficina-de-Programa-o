@@ -5,8 +5,8 @@ import pandas as pd
 
 st.title("Consulta de Preços de Livros")
 
-genero = st.text_input("Selecione o gênero de livro que você deseja:")
-opcao1 = st.checkbox('ciencias sociais')
+genero = st.selectbox("Selecione o gênero de livro que você deseja:", 
+                      options=["Animais de estimação", "Antiguidades & Colecionáveis","Apoio aos estudos","Arquitetura","Arte","Autoajuda", "Ficção Juvenil", "Fantasia", "Suspense"])
 genero = genero.replace(' ', '-')
 
 if st.button("Consultar"):
