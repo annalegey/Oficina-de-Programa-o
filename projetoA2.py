@@ -6,14 +6,14 @@ import pandas as pd
 st.title("Consulta de Preços de Livros")
 
 genero = st.selectbox("Selecione o gênero de livro que você deseja:", 
-                      options=["Animais de estimação", "Antiguidades & Colecionáveis","Apoio aos estudos","Arquitetura","Arte","Artes Perfomáticas",
-                               "Artesanato & Estilo de vida","Autoajuda", "Biografia & autobiografia", "Bíblias","Casa&Lar","Ciências","Ciência Política",
-                               "Ciências Sociais", "Coleções Literárias", "Computação & Informática", "Corpo, Mente & Espírito", "Crimes", "Crítica Literária"
-                               "Culinária & Gastronomia", "Design", "Direito", "Educação", "Engenharia & Tecnologia", "Esporte & Lazer"
-                               "Estudo De Línguas Estrangeiras", "Família & Relacionamentos", "Ficção", "Ficção Infantil", "Ficção Juvenil", "Filosofia",
-                               "Fotografia", "História","Humor","Jardinagem","Jogos & Atividades", "Língua, Comunicação & Disciplinas Relacionadas",
-                               "Livros Música","Matemática", "Medicina", "Natureza", "Negócios & Economia", "Não Ficção Infantil", "Não Ficção Juvenil", "Poesia",
-                               "Psicologia", "Quadrinhos, Mangás & Graphic Novels", "Referência", "Religião", "Saúde & Boa Forma", "Teatro", "Transportes", "Viagem"])
+                      options=["Animais de estimação", "Antiguidades e Colecionáveis","Apoio aos estudos","Arquitetura","Arte","Artes Perfomáticas",
+                               "Artesanato e Estilo de vida","Autoajuda", "Biografia e autobiografia", "Bíblias","Casa e Lar","Ciências","Ciência Política",
+                               "Ciências Sociais", "Coleções Literárias", "Computação e Informática", "Corpo, Mente e Espírito", "Crimes", "Crítica Literária"
+                               "Culinária e Gastronomia", "Design", "Direito", "Educação", "Engenharia e Tecnologia", "Esporte e Lazer"
+                               "Estudo De Línguas Estrangeiras", "Família e Relacionamentos", "Ficção", "Ficção Infantil", "Ficção Juvenil", "Filosofia",
+                               "Fotografia", "História","Humor","Jardinagem","Jogos e Atividades", "Língua, Comunicação e Disciplinas Relacionadas",
+                               "Livros Música","Matemática", "Medicina", "Natureza", "Negócios e Economia", "Não Ficção Infantil", "Não Ficção Juvenil", "Poesia",
+                               "Psicologia", "Quadrinhos, Mangás e Graphic Novels", "Referência", "Religião", "Saúde e Boa Forma", "Teatro", "Transportes", "Viagem"])
                               
 genero = genero.replace(' ', '-')
 
