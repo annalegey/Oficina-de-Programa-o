@@ -36,10 +36,10 @@ if st.button("Consultar"):
                 preco_new = preco.find('span', {'class': 'price-new'})
                 if preco_new:
                     preco_new = preco.find('span', {'class': 'price-new'}).text
-                    preco_new = float(preço_new.replace('R$',''))
+                    preco_new = float(preco_new.replace('R$',''))
                 else:
                     preco_new = preco.text.strip()
-                    preco_new = float(preço_new.replace('R$',''))
+                    preco_new = float(preco_new.replace('R$',''))
 
                 dados = {'Livro': nome_livro, 'Preço do livro': preco_new, 'Link para compra': link_livro}
                 lista.append(dados)
