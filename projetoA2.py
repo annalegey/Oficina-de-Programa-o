@@ -8,7 +8,7 @@ st.title("Consulta de Preços de Livros")
 genero = st.selectbox("Selecione o gênero de livro que você deseja:", 
                       options=["Animais de estimação", "Antiguidades e Colecionáveis","Apoio aos estudos","Arquitetura","Arte","Artes Perfomáticas",
                                "Artesanato e Estilo de vida","Autoajuda", "Biografia e autobiografia", "Bíblias","Casa e Lar","Ciências","Ciência Política",
-                               "Ciências Sociais", "Coleções Literárias", "Computação e Informática", "Corpo, Mente e Espírito", "Crimes", "Crítica Literária"
+                               "Ciências Sociais", "Coleções Literárias", "Computação e Informática", "Corpo, Mente e Espírito", "Crimes", "Crítica Literária",
                                "Culinária e Gastronomia", "Design", "Direito", "Educação", "Engenharia e Tecnologia", "Esporte e Lazer",
                                "Estudo De Línguas Estrangeiras", "Família e Relacionamentos", "Ficção", "Ficção Infantil", "Ficção Juvenil", "Filosofia",
                                "Fotografia", "História","Humor","Jardinagem","Jogos e Atividades", "Língua, Comunicação e Disciplinas Relacionadas",
