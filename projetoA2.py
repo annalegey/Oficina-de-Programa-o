@@ -2,8 +2,6 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-pip install plotly
-import plotly.express as px
 
 st.title("Consulta de Preços de Livros")
 
