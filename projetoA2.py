@@ -46,6 +46,6 @@ if st.button("Consultar"):
         st.write(df)
         df.set_index('Livro', inplace=True)
         st.title('Faixa de preços')
-        st.bar_chart(df)
+        st.line_chart(df[x= "Livro", y='Preço do livro'])
     else:
         st.write("Nenhum livro encontrado")
