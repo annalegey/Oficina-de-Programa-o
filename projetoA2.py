@@ -46,6 +46,7 @@ if st.button("Consultar"):
         st.write(df)
         df.set_index('Livro', inplace=True)
         st.title('Faixa de preços')
-        st.bar_chart(df, x = "Livro", y = "Preço do livro")
+        fig = px.bar(df, x='Livro', y='Preço do livro')
+        st.plotly_chart(fig)
     else:
         st.write("Nenhum livro encontrado")
