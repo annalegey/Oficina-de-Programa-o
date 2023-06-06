@@ -6,7 +6,15 @@ import pandas as pd
 st.title("Consulta de Preços de Livros")
 
 genero = st.selectbox("Selecione o gênero de livro que você deseja:", 
-                      options=["Animais de estimação", "Antiguidades & Colecionáveis","Apoio aos estudos","Arquitetura","Arte","Autoajuda", "Ficção Juvenil", "Fantasia", "Suspense"])
+                      options=["Animais de estimação", "Antiguidades & Colecionáveis","Apoio aos estudos","Arquitetura","Arte","Artes Perfomáticas",
+                               "Artesanato & Estilo de vida","Autoajuda", "Biografia & autobiografia", "Bíblias","Casa&Lar","Ciências","Ciência Política",
+                               "Ciências Sociais", "Coleções Literárias", "Computação & Informática", "Corpo, Mente & Espírito", "Crimes", "Crítica Literária"
+                               "Culinária & Gastronomia", "Design", "Direito", "Educação", "Engenharia & Tecnologia", "Esporte & Lazer"
+                               "Estudo De Línguas Estrangeiras", "Família & Relacionamentos", "Ficção", "Ficção Infantil", "Ficção Juvenil", "Filosofia",
+                               "Fotografia", "História","Humor","Jardinagem","Jogos & Atividades", "Língua, Comunicação & Disciplinas Relacionadas",
+                               "Livros Música","Matemática", "Medicina", "Natureza", "Negócios & Economia", "Não Ficção Infantil", "Não Ficção Juvenil", "Poesia",
+                               "Psicologia", "Quadrinhos, Mangás & Graphic Novels", "Referência", "Religião", "Saúde & Boa Forma", "Teatro", "Transportes", "Viagem"])
+                              
 genero = genero.replace(' ', '-')
 
 if st.button("Consultar"):
