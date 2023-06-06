@@ -43,9 +43,12 @@ if st.button("Consultar"):
                 lista.append(dados)
     if lista:
         df = pd.DataFrame(lista).sort_values(by='Preço do livro', ascending=True)
+        chart_data = pd.DataFrame(
+          np.random.randn(500),
+          columns=['Livro', 'Preço do Livro', 'Link para compra'])
         st.write(df)
         df.set_index('Livro', inplace=True)
         st.title('Faixa de preços')
-        st.line_chart(df, x = "Livro", y = "Preço do livro")
+        st.line_chart(chart_data, x = "Livro", y = "Preço do livro")
     else:
         st.write("Nenhum livro encontrado")
