@@ -44,7 +44,7 @@ if st.button("Consultar"):
     if lista:
         df = pd.DataFrame(lista).sort_values(by='Preço do livro', ascending=True)
         chart_data = pd.DataFrame(
-          np.random.randn(500),
+          np.random.randn(500)
           columns=['Livro', 'Preço do Livro', 'Link para compra'])
         st.write(df)
         df.set_index('Livro', inplace=True)
