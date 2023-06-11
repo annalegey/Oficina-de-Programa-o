@@ -51,3 +51,9 @@ if st.button("Consultar"):
         st.line_chart(df['Preço do livro'])
     else:
         st.write("Nenhum livro encontrado")
+[theme]
+primaryColor="#ff4b7e"
+backgroundColor="#e7fbff"
+secondaryBackgroundColor="#f0f5f6"
+textColor="#000000"
+font="serif"
